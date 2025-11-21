@@ -12,7 +12,5 @@
     "networking": true
   },
   "login": true,
-  "plugins": [
-    "https://raw.githubusercontent.com/DvoraG/iconic-button-demo/main/releases/iconic-button.zip"
-  ]
+  "plugins": ["https://demo.dg-devstudio.com/download-plugin.php"]
 }
