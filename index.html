@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Iconic Button Plugin Demo - DG DevStudio</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="header-content">
+        <div class="logo">Dg DevStudio - Iconic Button Plugin Demo</div>
+        <div class="header-links">
+          <a href="https://dg-devstudio.com/impressum" target="_blank"
+            >Impressum</a
+          >
+          <a href="https://dg-devstudio.com/datenschutz" target="_blank"
+            >Datenschutz</a
+          >
+          <a href="https://dg-devstudio.com" target="_blank">Home</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="info-banner">
+      <p>
+        <strong>Demo Environment:</strong> This is a WordPress Playground
+        instance. Any changes will NOT be saved. Login: admin / password
+      </p>
+    </div>
+
+    <iframe id="wp-playground"></iframe>
+
+    <script type="module">
+      import { startPlaygroundWeb } from "https://playground.wordpress.net/client/index.js";
+
+      const BLUEPRINT_URL =
+        "https://raw.githubusercontent.com/DvoraG/iconic-button-demo/main/blueprint.json";
+
+      async function loadBluePrint() {
+        try {
+          const response = await fetch(BLUEPRINT_URL);
+          if (!response.ok) {
+            throw new Error(`Failed to blueprint file: ${response.status}`);
+          }
+
+          const blueprint = await response.json();
+          return blueprint;
+        } catch (error) {
+          console.error("Error during blueprint load:", error);
+          throw error;
+        }
+      }
+
+      async function initPlayground() {
+        try {
+          const blueprint = await loadBluePrint();
+          console.log("Blueprint file successfully loaded:", blueprint);
+
+          const client = await startPlaygroundWeb({
+            iframe: document.getElementById("wp-playground"),
+            remoteUrl: "https://playground.wordpress.net/remote.html",
+            blueprint,
+          });
+
+          await client.isReady();
+
+          console.log("WordPress Playground successfully loaded");
+        } catch (error) {
+          console.log("Error during WordPress Playgrounds load", error);
+        }
+      }
+
+      initPlayground();
+    </script>
+
+    <div class="footer">
+      &copy; 2025 DG DevStudio |
+      <a href="https://dg-devstudio.com/impressum" target="_blank">Impressum</a>
+      |
+      <a href="https://dg-devstudio.com/datenschutz" target="_blank"
+        >Datenschutzerkl&auml;rung</a
+      >
+    </div>
+  </body>
+</html>

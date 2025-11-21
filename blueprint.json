@@ -1,0 +1,18 @@
+{
+  "$schema": "https://playground.wordpress.net/blueprint-schema.json",
+  "landingPage": "/wp-admin/plugins.php",
+  "preferredVersions": {
+    "php": "8.3",
+    "wp": "6.8"
+  },
+  "siteOptions": {
+    "blogname": "Iconic Button WordPress Playground Demo"
+  },
+  "features": {
+    "networking": true
+  },
+  "login": true,
+  "plugins": [
+    "https://raw.githubusercontent.com/DvoraG/iconic-button-demo/main/releases/iconic-button.zip"
+  ]
+}
