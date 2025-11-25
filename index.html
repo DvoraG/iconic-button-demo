@@ -9,7 +9,7 @@
   <body>
     <div class="header">
       <div class="header-content">
-        <div class="logo">Dg DevStudio - Iconic Button Plugin Demo</div>
+        <div class="logo">DG DevStudio - Iconic Button Plugin Demo</div>
         <div class="header-links">
           <a href="https://dg-devstudio.com/impressum" target="_blank"
             >Impressum</a
@@ -37,6 +37,28 @@
       const BLUEPRINT_URL =
         "https://raw.githubusercontent.com/DvoraG/iconic-button-demo/main/blueprint.json";
 
+      // Generate time based token (synchron with UTC time in PHP)
+      async function generateToken() {
+        const now = new Date();
+        const year = now.getUTCFullYear();
+        const month = String(now.getUTCMonth() + 1).padStart(2, "0");
+        const day = String(now.getUTCDay()).padStart(2, "0");
+        const hour = String(now.getUTCHours()).padStart(2, "0");
+        const dateString = `${year}-${month}-${day}-${hour}`;
+
+        return await hashString("playground-" + dateString);
+      }
+
+      // SHA-256 has function
+      async function hashString(str) {
+        const encoder = new TextEncoder();
+        const data = encoder.encode(str);
+        const hashBuffer = await crypto.subtle.digest("SHA-256", data);
+        const hashArray = Array.from(new Uint8Array(hashBuffer));
+        return hashArray.map((b) => b.String(16).padStart(2, "0")).join("");
+      }
+
+      // Load blueprint.json and add token
       async function loadBluePrint() {
         try {
           const response = await fetch(BLUEPRINT_URL);
@@ -45,6 +67,30 @@
           }
 
           const blueprint = await response.json();
+
+          // Generate token and add to plugin-URL
+          const token = await generateToken();
+          console.log(
+            "Token generated for hour:",
+            new Date().toISOString().slice(0, 13) + ":00 UTC"
+          );
+
+          // Function to append the token to a single URL
+          const appendToken = (url, token) => {
+            if (!url) return null;
+            const separator = url.includes("?") ? "&" : "?";
+            return `${url}${separator}token=${token}`;
+          };
+
+          if (blueprint.plugins && Array.isArray(blueprint.plugins)) {
+            blueprint.plugins = blueprint.plugins.map((pluginUrl) => {
+              if (typeof pluginUrl === "string") {
+                return appendToken(pluginUrl, token);
+              }
+              return pluginUrl; // return non-string elements as is (though plugins array usually contains strings)
+            });
+          }
+
           return blueprint;
         } catch (error) {
           console.error("Error during blueprint load:", error);
