@@ -14,7 +14,7 @@
       "step": "importWxr",
       "file": {
         "resource": "url",
-        "url": "https://demo.dg-devstudio.com/demo-post.xml"
+        "url": "https://raw.githubusercontent.com/DvoraG/iconic-button-demo/main/demo-post.xml"
       }
     },
     {
