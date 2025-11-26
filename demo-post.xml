@@ -16,7 +16,7 @@
 <!-- 7. WordPress will then import each of the posts, pages, comments, categories, etc. -->
 <!--    contained in this file into your site. -->
 
-	<!-- generator="WordPress/6.8.3" created="2025-11-26 10:40" -->
+	<!-- generator="WordPress/6.8.3" created="2025-11-26 11:25" -->
 <rss version="2.0"
 	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
 	xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -26,14 +26,14 @@
 >
 
 <channel>
-	<title>Iconic Button WordPress Playground Demo</title>
-	<link>https://playground.wordpress.net/scope:0.8879408546477667</link>
+	<title>My WordPress Website</title>
+	<link>https://playground.wordpress.net/scope:0.6629024450428305</link>
 	<description></description>
-	<pubDate>Wed, 26 Nov 2025 10:40:52 +0000</pubDate>
+	<pubDate>Wed, 26 Nov 2025 11:25:38 +0000</pubDate>
 	<language>en-US</language>
 	<wp:wxr_version>1.2</wp:wxr_version>
-	<wp:base_site_url>https://playground.wordpress.net/scope:0.8879408546477667</wp:base_site_url>
-	<wp:base_blog_url>https://playground.wordpress.net/scope:0.8879408546477667</wp:base_blog_url>
+	<wp:base_site_url>https://playground.wordpress.net/scope:0.6629024450428305</wp:base_site_url>
+	<wp:base_blog_url>https://playground.wordpress.net/scope:0.6629024450428305</wp:base_blog_url>
 
 		<wp:author><wp:author_id>1</wp:author_id><wp:author_login><![CDATA[admin]]></wp:author_login><wp:author_email><![CDATA[admin@localhost.com]]></wp:author_email><wp:author_display_name><![CDATA[admin]]></wp:author_display_name><wp:author_first_name><![CDATA[]]></wp:author_first_name><wp:author_last_name><![CDATA[]]></wp:author_last_name></wp:author>
 
@@ -42,12 +42,16 @@
 
 		<item>
 		<title><![CDATA[Icon Button Demo Post]]></title>
-		<link>https://playground.wordpress.net/scope:0.8879408546477667/2025/11/26/icon-button-demo-post/</link>
+		<link>https://playground.wordpress.net/scope:0.6629024450428305/icon-button-demo-post/</link>
 		<pubDate>Wed, 26 Nov 2025 10:40:07 +0000</pubDate>
 		<dc:creator><![CDATA[admin]]></dc:creator>
 		<guid isPermaLink="false">https://playground.wordpress.net/scope:0.8879408546477667/?p=8</guid>
 		<description></description>
-		<content:encoded><![CDATA[<!-- wp:dgdev/icon-buttons -->
+		<content:encoded><![CDATA[<!-- wp:paragraph -->
+<p id="standard">The standard variantions - fill and outline:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:dgdev/icon-buttons -->
 <div class="wp-block-dgdev-icon-buttons has-global-padding"><!-- wp:dgdev/icon-button {"ariaLabel":"Add button state: fill, Button leads to current page"} -->
 <div class="wp-block-dgdev-icon-button is-theme-light"><span role="button" tabindex="0" class="wp-block-dgdev-icon-button__link is-style-fill no-text" title="Add" aria-label="Add button state: fill, Button leads to current page"><div class="wp-block-dgdev-icon-button__text"><i class="fas fa-add " style="font-size:20px" aria-hidden="true"></i></div></span><div class="wp-block-dgdev-icon-button__feedback sr-only" aria-live="polite"></div></div>
 <!-- /wp:dgdev/icon-button -->
@@ -55,13 +59,145 @@
 <!-- wp:dgdev/icon-button {"styleVariant":"outline","ariaLabel":"Add button state: outlined, Button leads to current page","className":"is-style-outline"} -->
 <div class="wp-block-dgdev-icon-button is-theme-light is-style-outline"><span role="button" tabindex="0" class="wp-block-dgdev-icon-button__link is-style-outline no-text" title="Add" aria-label="Add button state: outlined, Button leads to current page"><div class="wp-block-dgdev-icon-button__text"><i class="fas fa-add " style="font-size:20px" aria-hidden="true"></i></div></span><div class="wp-block-dgdev-icon-button__feedback sr-only" aria-live="polite"></div></div>
 <!-- /wp:dgdev/icon-button --></div>
+<!-- /wp:dgdev/icon-buttons -->
+
+<!-- wp:paragraph -->
+<p>Use the theme colors and gradients:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:dgdev/icon-buttons -->
+<div class="wp-block-dgdev-icon-buttons has-global-padding"><!-- wp:dgdev/icon-button {"backgroundColor":"#503AA8","hasDefaultColors":false,"ariaLabel":"Add button state: fill, Button leads to current page"} -->
+<div class="wp-block-dgdev-icon-button is-theme-light"><span role="button" tabindex="0" class="wp-block-dgdev-icon-button__link is-style-fill no-text" style="background-color:#503AA8" title="Add" aria-label="Add button state: fill, Button leads to current page"><div class="wp-block-dgdev-icon-button__text"><i class="fas fa-add " style="font-size:20px" aria-hidden="true"></i></div></span><div class="wp-block-dgdev-icon-button__feedback sr-only" aria-live="polite"></div></div>
+<!-- /wp:dgdev/icon-button -->
+
+<!-- wp:dgdev/icon-button {"gradient":"linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%)","hasDefaultColors":false,"ariaLabel":"Add button state: fill, Button leads to current page"} -->
+<div class="wp-block-dgdev-icon-button is-theme-light"><span role="button" tabindex="0" class="wp-block-dgdev-icon-button__link is-style-fill no-text" style="background-image:linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%)" title="Add" aria-label="Add button state: fill, Button leads to current page"><div class="wp-block-dgdev-icon-button__text"><i class="fas fa-add " style="font-size:20px" aria-hidden="true"></i></div></span><div class="wp-block-dgdev-icon-button__feedback sr-only" aria-live="polite"></div></div>
+<!-- /wp:dgdev/icon-button -->
+
+<!-- wp:dgdev/icon-button {"textColor":"#686868","styleVariant":"outline","hasDefaultColors":false,"ariaLabel":"Add button state: outlined, Button leads to current page","className":"is-style-outline"} -->
+<div class="wp-block-dgdev-icon-button is-theme-light is-style-outline"><span role="button" tabindex="0" class="wp-block-dgdev-icon-button__link is-style-outline no-text" style="color:#686868;background-color:transparent" title="Add" aria-label="Add button state: outlined, Button leads to current page"><div class="wp-block-dgdev-icon-button__text"><i class="fas fa-add " style="font-size:20px" aria-hidden="true"></i></div></span><div class="wp-block-dgdev-icon-button__feedback sr-only" aria-live="polite"></div></div>
+<!-- /wp:dgdev/icon-button --></div>
+<!-- /wp:dgdev/icon-buttons -->
+
+<!-- wp:paragraph -->
+<p>Add an external link (green outline) , internal link or section anchor:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:dgdev/icon-buttons -->
+<div class="wp-block-dgdev-icon-buttons has-global-padding"><!-- wp:dgdev/icon-button {"buttonText":"Link","url":"https://example.com","rel":"nofollow noreferrer noopener","target":"_blank","isExternalLink":true,"iconLabel":"Link","fontAwesomeIcon":"fas fa-link","tooltip":"Link","ariaLabel":"Link button state: fill, Button leads to an external link"} -->
+<div class="wp-block-dgdev-icon-button is-theme-light"><a href="https://example.com" target="_blank" rel="nofollow noreferrer noopener" class="wp-block-dgdev-icon-button__link is-style-fill no-text has-external-link" title="Link" aria-label="Link button state: fill, Button leads to an external link"><div class="wp-block-dgdev-icon-button__text"><i class="fas fa-link " style="font-size:20px" aria-hidden="true"></i></div><div class="wp-block-dgdev-icon-button__indicator"></div></a><div class="wp-block-dgdev-icon-button__feedback sr-only" aria-live="polite"></div></div>
+<!-- /wp:dgdev/icon-button -->
+
+<!-- wp:dgdev/icon-button {"buttonText":"Link","url":"https://playground.wordpress.net/scope:0.6629024450428305/sample-page/","rel":"noreferrer noopener","target":"_blank","iconLabel":"Link","fontAwesomeIcon":"fas fa-link","tooltip":"Link","ariaLabel":"Link button state: fill, Button leads to the sample page"} -->
+<div class="wp-block-dgdev-icon-button is-theme-light"><a href="https://playground.wordpress.net/scope:0.6629024450428305/sample-page/" target="_blank" rel="noreferrer noopener" class="wp-block-dgdev-icon-button__link is-style-fill no-text" title="Link" aria-label="Link button state: fill, Button leads to the sample page"><div class="wp-block-dgdev-icon-button__text"><i class="fas fa-link " style="font-size:20px" aria-hidden="true"></i></div></a><div class="wp-block-dgdev-icon-button__feedback sr-only" aria-live="polite"></div></div>
+<!-- /wp:dgdev/icon-button -->
+
+<!-- wp:dgdev/icon-button {"buttonText":"Arrow Up","url":"#standard","iconLabel":"Arrow Up","fontAwesomeIcon":"fas fa-arrow-up","tooltip":"Arrow Up","ariaLabel":"Arrow Up button state: fill, Button leads to the standard section"} -->
+<div class="wp-block-dgdev-icon-button is-theme-light"><a href="#standard" class="wp-block-dgdev-icon-button__link is-style-fill no-text" title="Arrow Up" aria-label="Arrow Up button state: fill, Button leads to the standard section"><div class="wp-block-dgdev-icon-button__text"><i class="fas fa-arrow-up " style="font-size:20px" aria-hidden="true"></i></div></a><div class="wp-block-dgdev-icon-button__feedback sr-only" aria-live="polite"></div></div>
+<!-- /wp:dgdev/icon-button --></div>
+<!-- /wp:dgdev/icon-buttons -->
+
+<!-- wp:paragraph -->
+<p>Combine icons and text before or after:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:dgdev/icon-buttons -->
+<div class="wp-block-dgdev-icon-buttons has-global-padding"><!-- wp:dgdev/icon-button {"buttonText":"Contact","showText":true,"iconLabel":"Email","fontAwesomeIcon":"fas fa-envelope","tooltip":"Contact","ariaLabel":"Contact button state: fill, Button leads to current page"} -->
+<div class="wp-block-dgdev-icon-button is-theme-light"><span role="button" tabindex="0" class="wp-block-dgdev-icon-button__link is-style-fill" title="Contact" aria-label="Contact button state: fill, Button leads to current page"><div class="wp-block-dgdev-icon-button__text"><i class="fas fa-envelope " style="font-size:20px" aria-hidden="true"></i><span class="text-span-after">Contact</span></div></span><div class="wp-block-dgdev-icon-button__feedback sr-only" aria-live="polite"></div></div>
+<!-- /wp:dgdev/icon-button -->
+
+<!-- wp:dgdev/icon-button {"buttonText":"Home","showText":true,"iconLabel":"Home","fontAwesomeIcon":"fas fa-house","iconPosition":"after","styleVariant":"outline","tooltip":"Home","ariaLabel":"Home button state: outlined, Button leads to current page","className":"is-style-outline"} -->
+<div class="wp-block-dgdev-icon-button is-theme-light is-style-outline"><span role="button" tabindex="0" class="wp-block-dgdev-icon-button__link is-style-outline" title="Home" aria-label="Home button state: outlined, Button leads to current page"><div class="wp-block-dgdev-icon-button__text"><span class="text-span-before">Home</span><i class="fas fa-house " style="font-size:20px" aria-hidden="true"></i></div></span><div class="wp-block-dgdev-icon-button__feedback sr-only" aria-live="polite"></div></div>
+<!-- /wp:dgdev/icon-button -->
+
+<!-- wp:dgdev/icon-button {"buttonText":"WordPress","showText":true,"url":"https://wordpress.org","rel":"nofollow noreferrer noopener","target":"_blank","isExternalLink":true,"iconLabel":"Circle","fontAwesomeIcon":"fas fa-circle","iconPosition":"after","tooltip":"WordPress","ariaLabel":"WordPress button state: fill, Button leads to an external link"} -->
+<div class="wp-block-dgdev-icon-button is-theme-light"><a href="https://wordpress.org" target="_blank" rel="nofollow noreferrer noopener" class="wp-block-dgdev-icon-button__link is-style-fill  has-external-link" title="WordPress" aria-label="WordPress button state: fill, Button leads to an external link"><div class="wp-block-dgdev-icon-button__text"><span class="text-span-before">WordPress</span><i class="fas fa-circle " style="font-size:20px" aria-hidden="true"></i></div><div class="wp-block-dgdev-icon-button__indicator"></div></a><div class="wp-block-dgdev-icon-button__feedback sr-only" aria-live="polite"></div></div>
+<!-- /wp:dgdev/icon-button --></div>
+<!-- /wp:dgdev/icon-buttons -->
+
+<!-- wp:paragraph -->
+<p>Set the border radius:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:dgdev/icon-buttons -->
+<div class="wp-block-dgdev-icon-buttons has-global-padding"><!-- wp:dgdev/icon-button {"backgroundColor":"#503AA8","textColor":"#FFFFFF","ariaLabel":"Add button state: fill, Button leads to current page"} -->
+<div class="wp-block-dgdev-icon-button is-theme-light"><span role="button" tabindex="0" class="wp-block-dgdev-icon-button__link is-style-fill no-text" style="background-color:#503AA8;color:#FFFFFF" title="Add" aria-label="Add button state: fill, Button leads to current page"><div class="wp-block-dgdev-icon-button__text"><i class="fas fa-add " style="font-size:20px" aria-hidden="true"></i></div></span><div class="wp-block-dgdev-icon-button__feedback sr-only" aria-live="polite"></div></div>
+<!-- /wp:dgdev/icon-button -->
+
+<!-- wp:dgdev/icon-button {"borderRadius":4,"backgroundColor":"#503AA8","textColor":"#FFFFFF","ariaLabel":"Add button state: fill, Button leads to current page"} -->
+<div class="wp-block-dgdev-icon-button is-theme-light"><span role="button" tabindex="0" class="wp-block-dgdev-icon-button__link is-style-fill no-text" style="border-radius:4px;background-color:#503AA8;color:#FFFFFF" title="Add" aria-label="Add button state: fill, Button leads to current page"><div class="wp-block-dgdev-icon-button__text"><i class="fas fa-add " style="font-size:20px" aria-hidden="true"></i></div></span><div class="wp-block-dgdev-icon-button__feedback sr-only" aria-live="polite"></div></div>
+<!-- /wp:dgdev/icon-button -->
+
+<!-- wp:dgdev/icon-button {"borderRadius":8,"backgroundColor":"#503AA8","textColor":"#FFFFFF","ariaLabel":"Add button state: fill, Button leads to current page"} -->
+<div class="wp-block-dgdev-icon-button is-theme-light"><span role="button" tabindex="0" class="wp-block-dgdev-icon-button__link is-style-fill no-text" style="border-radius:8px;background-color:#503AA8;color:#FFFFFF" title="Add" aria-label="Add button state: fill, Button leads to current page"><div class="wp-block-dgdev-icon-button__text"><i class="fas fa-add " style="font-size:20px" aria-hidden="true"></i></div></span><div class="wp-block-dgdev-icon-button__feedback sr-only" aria-live="polite"></div></div>
+<!-- /wp:dgdev/icon-button -->
+
+<!-- wp:dgdev/icon-button {"borderRadius":12,"backgroundColor":"#503AA8","textColor":"#FFFFFF","ariaLabel":"Add button state: fill, Button leads to current page"} -->
+<div class="wp-block-dgdev-icon-button is-theme-light"><span role="button" tabindex="0" class="wp-block-dgdev-icon-button__link is-style-fill no-text" style="border-radius:12px;background-color:#503AA8;color:#FFFFFF" title="Add" aria-label="Add button state: fill, Button leads to current page"><div class="wp-block-dgdev-icon-button__text"><i class="fas fa-add " style="font-size:20px" aria-hidden="true"></i></div></span><div class="wp-block-dgdev-icon-button__feedback sr-only" aria-live="polite"></div></div>
+<!-- /wp:dgdev/icon-button -->
+
+<!-- wp:dgdev/icon-button {"borderRadius":24,"backgroundColor":"#503AA8","ariaLabel":"Add button state: fill, Button leads to current page"} -->
+<div class="wp-block-dgdev-icon-button is-theme-light"><span role="button" tabindex="0" class="wp-block-dgdev-icon-button__link is-style-fill no-text" style="border-radius:24px;background-color:#503AA8" title="Add" aria-label="Add button state: fill, Button leads to current page"><div class="wp-block-dgdev-icon-button__text"><i class="fas fa-add " style="font-size:20px" aria-hidden="true"></i></div></span><div class="wp-block-dgdev-icon-button__feedback sr-only" aria-live="polite"></div></div>
+<!-- /wp:dgdev/icon-button --></div>
+<!-- /wp:dgdev/icon-buttons -->
+
+<!-- wp:dgdev/icon-buttons -->
+<div class="wp-block-dgdev-icon-buttons has-global-padding"><!-- wp:dgdev/icon-button {"showText":true,"ariaLabel":"Add button state: fill, Button leads to current page"} -->
+<div class="wp-block-dgdev-icon-button is-theme-light"><span role="button" tabindex="0" class="wp-block-dgdev-icon-button__link is-style-fill" title="Add" aria-label="Add button state: fill, Button leads to current page"><div class="wp-block-dgdev-icon-button__text"><i class="fas fa-add " style="font-size:20px" aria-hidden="true"></i><span class="text-span-after">Add</span></div></span><div class="wp-block-dgdev-icon-button__feedback sr-only" aria-live="polite"></div></div>
+<!-- /wp:dgdev/icon-button -->
+
+<!-- wp:dgdev/icon-button {"showText":true,"borderRadius":4,"ariaLabel":"Add button state: fill, Button leads to current page"} -->
+<div class="wp-block-dgdev-icon-button is-theme-light"><span role="button" tabindex="0" class="wp-block-dgdev-icon-button__link is-style-fill" style="border-radius:4px" title="Add" aria-label="Add button state: fill, Button leads to current page"><div class="wp-block-dgdev-icon-button__text"><i class="fas fa-add " style="font-size:20px" aria-hidden="true"></i><span class="text-span-after">Add</span></div></span><div class="wp-block-dgdev-icon-button__feedback sr-only" aria-live="polite"></div></div>
+<!-- /wp:dgdev/icon-button -->
+
+<!-- wp:dgdev/icon-button {"showText":true,"borderRadius":12,"ariaLabel":"Add button state: fill, Button leads to current page"} -->
+<div class="wp-block-dgdev-icon-button is-theme-light"><span role="button" tabindex="0" class="wp-block-dgdev-icon-button__link is-style-fill" style="border-radius:12px" title="Add" aria-label="Add button state: fill, Button leads to current page"><div class="wp-block-dgdev-icon-button__text"><i class="fas fa-add " style="font-size:20px" aria-hidden="true"></i><span class="text-span-after">Add</span></div></span><div class="wp-block-dgdev-icon-button__feedback sr-only" aria-live="polite"></div></div>
+<!-- /wp:dgdev/icon-button -->
+
+<!-- wp:dgdev/icon-button {"showText":true,"borderRadius":16,"ariaLabel":"Add button state: fill, Button leads to current page"} -->
+<div class="wp-block-dgdev-icon-button is-theme-light"><span role="button" tabindex="0" class="wp-block-dgdev-icon-button__link is-style-fill" style="border-radius:16px" title="Add" aria-label="Add button state: fill, Button leads to current page"><div class="wp-block-dgdev-icon-button__text"><i class="fas fa-add " style="font-size:20px" aria-hidden="true"></i><span class="text-span-after">Add</span></div></span><div class="wp-block-dgdev-icon-button__feedback sr-only" aria-live="polite"></div></div>
+<!-- /wp:dgdev/icon-button -->
+
+<!-- wp:dgdev/icon-button {"showText":true,"borderRadius":20,"ariaLabel":"Add button state: fill, Button leads to current page"} -->
+<div class="wp-block-dgdev-icon-button is-theme-light"><span role="button" tabindex="0" class="wp-block-dgdev-icon-button__link is-style-fill" style="border-radius:20px" title="Add" aria-label="Add button state: fill, Button leads to current page"><div class="wp-block-dgdev-icon-button__text"><i class="fas fa-add " style="font-size:20px" aria-hidden="true"></i><span class="text-span-after">Add</span></div></span><div class="wp-block-dgdev-icon-button__feedback sr-only" aria-live="polite"></div></div>
+<!-- /wp:dgdev/icon-button -->
+
+<!-- wp:dgdev/icon-button {"showText":true,"borderRadius":24,"ariaLabel":"Add button state: fill, Button leads to current page"} -->
+<div class="wp-block-dgdev-icon-button is-theme-light"><span role="button" tabindex="0" class="wp-block-dgdev-icon-button__link is-style-fill" style="border-radius:24px" title="Add" aria-label="Add button state: fill, Button leads to current page"><div class="wp-block-dgdev-icon-button__text"><i class="fas fa-add " style="font-size:20px" aria-hidden="true"></i><span class="text-span-after">Add</span></div></span><div class="wp-block-dgdev-icon-button__feedback sr-only" aria-live="polite"></div></div>
+<!-- /wp:dgdev/icon-button -->
+
+<!-- wp:dgdev/icon-button {"showText":true,"borderRadius":32,"ariaLabel":"Add button state: fill, Button leads to current page"} -->
+<div class="wp-block-dgdev-icon-button is-theme-light"><span role="button" tabindex="0" class="wp-block-dgdev-icon-button__link is-style-fill" style="border-radius:32px" title="Add" aria-label="Add button state: fill, Button leads to current page"><div class="wp-block-dgdev-icon-button__text"><i class="fas fa-add " style="font-size:20px" aria-hidden="true"></i><span class="text-span-after">Add</span></div></span><div class="wp-block-dgdev-icon-button__feedback sr-only" aria-live="polite"></div></div>
+<!-- /wp:dgdev/icon-button --></div>
+<!-- /wp:dgdev/icon-buttons -->
+
+<!-- wp:paragraph -->
+<p>Choose between 4 different icon sizes:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:dgdev/icon-buttons -->
+<div class="wp-block-dgdev-icon-buttons has-global-padding"><!-- wp:dgdev/icon-button {"iconSize":"small","styleVariant":"outline","ariaLabel":"Add button state: outlined, Button leads to current page","className":"is-style-outline"} -->
+<div class="wp-block-dgdev-icon-button is-theme-light is-style-outline"><span role="button" tabindex="0" class="wp-block-dgdev-icon-button__link is-style-outline no-text" title="Add" aria-label="Add button state: outlined, Button leads to current page"><div class="wp-block-dgdev-icon-button__text"><i class="fas fa-add " style="font-size:16px" aria-hidden="true"></i></div></span><div class="wp-block-dgdev-icon-button__feedback sr-only" aria-live="polite"></div></div>
+<!-- /wp:dgdev/icon-button -->
+
+<!-- wp:dgdev/icon-button {"styleVariant":"outline","ariaLabel":"Add button state: outlined, Button leads to current page","className":"is-style-outline"} -->
+<div class="wp-block-dgdev-icon-button is-theme-light is-style-outline"><span role="button" tabindex="0" class="wp-block-dgdev-icon-button__link is-style-outline no-text" title="Add" aria-label="Add button state: outlined, Button leads to current page"><div class="wp-block-dgdev-icon-button__text"><i class="fas fa-add " style="font-size:20px" aria-hidden="true"></i></div></span><div class="wp-block-dgdev-icon-button__feedback sr-only" aria-live="polite"></div></div>
+<!-- /wp:dgdev/icon-button -->
+
+<!-- wp:dgdev/icon-button {"iconSize":"large","styleVariant":"outline","ariaLabel":"Add button state: outlined, Button leads to current page","className":"is-style-outline"} -->
+<div class="wp-block-dgdev-icon-button is-theme-light is-style-outline"><span role="button" tabindex="0" class="wp-block-dgdev-icon-button__link is-style-outline no-text" title="Add" aria-label="Add button state: outlined, Button leads to current page"><div class="wp-block-dgdev-icon-button__text"><i class="fas fa-add " style="font-size:24px" aria-hidden="true"></i></div></span><div class="wp-block-dgdev-icon-button__feedback sr-only" aria-live="polite"></div></div>
+<!-- /wp:dgdev/icon-button -->
+
+<!-- wp:dgdev/icon-button {"iconSize":"xLarge","styleVariant":"outline","ariaLabel":"Add button state: outlined, Button leads to current page","className":"is-style-outline"} -->
+<div class="wp-block-dgdev-icon-button is-theme-light is-style-outline"><span role="button" tabindex="0" class="wp-block-dgdev-icon-button__link is-style-outline no-text" title="Add" aria-label="Add button state: outlined, Button leads to current page"><div class="wp-block-dgdev-icon-button__text"><i class="fas fa-add " style="font-size:28px" aria-hidden="true"></i></div></span><div class="wp-block-dgdev-icon-button__feedback sr-only" aria-live="polite"></div></div>
+<!-- /wp:dgdev/icon-button --></div>
 <!-- /wp:dgdev/icon-buttons -->]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
 		<wp:post_id>8</wp:post_id>
 		<wp:post_date><![CDATA[2025-11-26 10:40:07]]></wp:post_date>
 		<wp:post_date_gmt><![CDATA[2025-11-26 10:40:07]]></wp:post_date_gmt>
-		<wp:post_modified><![CDATA[2025-11-26 10:40:07]]></wp:post_modified>
-		<wp:post_modified_gmt><![CDATA[2025-11-26 10:40:07]]></wp:post_modified_gmt>
+		<wp:post_modified><![CDATA[2025-11-26 11:24:52]]></wp:post_modified>
+		<wp:post_modified_gmt><![CDATA[2025-11-26 11:24:52]]></wp:post_modified_gmt>
 		<wp:comment_status><![CDATA[open]]></wp:comment_status>
 		<wp:ping_status><![CDATA[open]]></wp:ping_status>
 		<wp:post_name><![CDATA[icon-button-demo-post]]></wp:post_name>
