@@ -1,22 +1,29 @@
 {
-  "$schema": "https://playground.wordpress.net/blueprint-schema.json",
-  "landingPage": "/",
+  "landingPage": "/?p=8",
   "preferredVersions": {
     "php": "8.3",
     "wp": "6.8"
   },
-  "siteOptions": {
-    "blogname": "Iconic Button WordPress Playground Demo"
-  },
-  "features": {
-    "networking": true
-  },
-  "login": true,
   "plugins": ["https://demo.dg-devstudio.com/download-plugin.php"],
   "steps": [
     {
-      "step": "runPHP",
-      "code": "<?php\nrequire '/wordpress/wp-load.php';\n$page = wp_insert_post([\n    'post_title'   => 'Iconic Button Demo',\n    'post_name'    => 'iconic-button-demo',\n    'post_type'    => 'page',\n    'post_status'  => 'publish',\n    'post_content' => '<!-- wp:dgdev/icon-buttons -->\\n<div class=\"wp-block-dgdev-icon-buttons has-global-padding\"><!-- wp:dgdev/icon-button {\"ariaLabel\":\"Add button state: fill, Button leads to current page\"} -->\\n<div class=\"wp-block-dgdev-icon-button is-theme-light\"><span role=\"button\" tabindex=\"0\" class=\"wp-block-dgdev-icon-button__link is-style-fill no-text\" title=\"Add\" aria-label=\"Add button state: fill, Button leads to current page\"><div class=\"wp-block-dgdev-icon-button__text\"><i class=\"fas fa-add \" style=\"font-size:20px\" aria-hidden=\"true\"></i></div></span><div class=\"wp-block-dgdev-icon-button__feedback sr-only\" aria-live=\"polite\"></div></div>\\n<!-- /wp:dgdev/icon-button --></div>\\n<!-- /wp:dgdev/icon-buttons -->'\n]);\nupdate_option('show_on_front', 'page');\nupdate_option('page_on_front', $page);\n"
+      "step": "login",
+      "username": "admin"
+    },
+    {
+      "step": "importWxr",
+      "file": {
+        "resource": "url",
+        "url": "https://demo.dg-devstudio.com/demo-post.xml"
+      }
+    },
+    {
+      "step": "wp-cli",
+      "command": "wp rewrite structure '/%postname%/' --hard"
+    },
+    {
+      "step": "wp-cli",
+      "command": "wp rewrite flush"
     }
   ]
 }
