@@ -1,6 +1,6 @@
 {
   "$schema": "https://playground.wordpress.net/blueprint-schema.json",
-  "landingPage": "/wp-admin/plugins.php",
+  "landingPage": "/?p=2",
   "preferredVersions": {
     "php": "8.3",
     "wp": "6.8"
@@ -12,5 +12,11 @@
     "networking": true
   },
   "login": true,
-  "plugins": ["https://demo.dg-devstudio.com/download-plugin.php"]
+  "plugins": ["https://demo.dg-devstudio.com/download-plugin.php"],
+  "steps": [
+    {
+      "step": "runPHP",
+      "code": "<?php require_once 'wordpress/wp-load.php'; $content = '<!-- wp:dgdev/icon-buttons /-->'; wp_insert_post(['post_title' => 'Icon Button Demo', 'post_content' => $content, 'post_status' => 'publish', 'post_type' => 'post', 'post_author' => 1]); ?>"
+    }
+  ]
 }
