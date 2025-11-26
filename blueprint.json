@@ -18,6 +18,13 @@
       }
     },
     {
+      "step": "importWxr",
+      "file": {
+        "resource": "url",
+        "url": "https://raw.githubusercontent.com/DvoraG/iconic-button-demo/main/demo-page.xml"
+      }
+    },
+    {
       "step": "wp-cli",
       "command": "wp rewrite structure '/%postname%/' --hard"
     },
