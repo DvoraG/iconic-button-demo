@@ -1,6 +1,6 @@
 {
   "$schema": "https://playground.wordpress.net/blueprint-schema.json",
-  "landingPage": "/?p=2",
+  "landingPage": "/",
   "preferredVersions": {
     "php": "8.3",
     "wp": "6.8"
@@ -16,7 +16,7 @@
   "steps": [
     {
       "step": "runPHP",
-      "code": "<?php require_once 'wordpress/wp-load.php'; $content = '<!-- wp:dgdev/icon-buttons /-->'; wp_insert_post(['post_title' => 'Icon Button Demo', 'post_content' => $content, 'post_status' => 'publish', 'post_type' => 'post', 'post_author' => 1]); ?>"
+      "code": "<?php\nrequire '/wordpress/wp-load.php';\n$page = wp_insert_post([\n    'post_title'   => 'Iconic Button Demo',\n    'post_name'    => 'iconic-button-demo',\n    'post_type'    => 'page',\n    'post_status'  => 'publish',\n    'post_content' => '<!-- wp:dgdev/icon-buttons -->\\n<div class=\"wp-block-dgdev-icon-buttons has-global-padding\"><!-- wp:dgdev/icon-button {\"ariaLabel\":\"Add button state: fill, Button leads to current page\"} -->\\n<div class=\"wp-block-dgdev-icon-button is-theme-light\"><span role=\"button\" tabindex=\"0\" class=\"wp-block-dgdev-icon-button__link is-style-fill no-text\" title=\"Add\" aria-label=\"Add button state: fill, Button leads to current page\"><div class=\"wp-block-dgdev-icon-button__text\"><i class=\"fas fa-add \" style=\"font-size:20px\" aria-hidden=\"true\"></i></div></span><div class=\"wp-block-dgdev-icon-button__feedback sr-only\" aria-live=\"polite\"></div></div>\\n<!-- /wp:dgdev/icon-button --></div>\\n<!-- /wp:dgdev/icon-buttons -->'\n]);\nupdate_option('show_on_front', 'page');\nupdate_option('page_on_front', $page);\n"
     }
   ]
 }
